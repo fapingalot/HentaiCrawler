@@ -14,11 +14,11 @@ def download(URL, PATH):
 
     # Download file to tmp
     TMP = os.path.join(os.path.dirname(PATH), ".download." + gen_random())
-    if os.system("wget --read-timeout=300 -O %s %s" % (TMP, URL)) != 0:
+    while os.system("wget --read-timeout=20 -O %s %s" % (TMP, URL)) != 0:
         os.remove(TMP)
-    else:
-        os.rename(TMP, PATH)
 
+    # Move to destination
+    os.rename(TMP, PATH)
 
 
 def save_image(response, path):
