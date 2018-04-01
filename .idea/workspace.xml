@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77a4f491-6621-4bde-84f8-1f4ea0816f3f" name="Default" comment="Added JetBrains ignores">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="77a4f491-6621-4bde-84f8-1f4ea0816f3f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/tutorial/util/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/util/url.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +16,20 @@
       <file leaf-file-name="url.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial/util/url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="210">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorial/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -46,7 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/update.sh" />
         <option value="$PROJECT_DIR$/tutorial/spiders/thatperver_pics.py" />
         <option value="$PROJECT_DIR$/tutorial/settings.py" />
         <option value="$PROJECT_DIR$/rand.py" />
@@ -96,6 +103,7 @@
         <option value="$PROJECT_DIR$/saves/thatpervert.json" />
         <option value="$PROJECT_DIR$/bin/update/thatpervert" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tutorial/util/url.py" />
       </list>
     </option>
@@ -255,7 +263,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522598919931</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Made it so it timed out at 20 seconds of idle and retried.">
+      <created>1522607491730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522607491730</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Removed unused 2 functions un url.py and replaces wget with curl.">
+      <created>1522613519066</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522613519066</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -309,7 +331,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Redone the download function" />
     <MESSAGE value="Added JetBrains ignores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JetBrains ignores" />
+    <MESSAGE value="Made it so it timed out at 20 seconds of idle and retried." />
+    <MESSAGE value="Removed unused 2 functions un url.py and replaces wget with curl." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused 2 functions un url.py and replaces wget with curl." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -409,13 +433,6 @@
     <entry file="file://$PROJECT_DIR$/bin-b/shadbase" />
     <entry file="file://$PROJECT_DIR$/bin-b/thatpervert" />
     <entry file="file://$PROJECT_DIR$/bin-b/simply-hentai" />
-    <entry file="file://$PROJECT_DIR$/tutorial/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/bin/simply-hentai.py" />
     <entry file="file://$PROJECT_DIR$/new-bin/simply-hentai.py" />
     <entry file="file://$PROJECT_DIR$/bin/xcartx">
@@ -523,10 +540,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/util/url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="210">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>

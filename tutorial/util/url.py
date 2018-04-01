@@ -1,10 +1,9 @@
-from .file import make_parent_dir, save_data
-from .misc import gen_random, sizeof_fmt
+from .file import make_parent_dir
+from .misc import gen_random
 import os
 from multiprocessing import Process
 import logging
 import time
-from urllib.request import urlopen
 
 
 def download(URL, PATH):
