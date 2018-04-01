@@ -24,4 +24,4 @@ The bin files that accept input save the input in a json in ``saves/`` folder.
 And you can download all saved with the scripts in the ``bin/update/`` folder
 
 
-## ONLY FOR LINUX NEEDES: wget, xclip
+## ONLY FOR LINUX NEEDES: curl, xclip
