@@ -1,6 +1,5 @@
 from .file import make_parent_dir, save_data
 from .misc import gen_random, sizeof_fmt
-import subprocess
 import os
 from multiprocessing import Process
 import logging
@@ -8,13 +7,18 @@ from urllib.request import urlopen
 
 
 def download(URL, PATH):
+    if os.path.exists(PATH):
+        return
+
     make_parent_dir(PATH)
 
-    #info("Downloading: %s to %s" % (URL, PATH))
-    devnull = open('/dev/null', 'w')
-    process = subprocess.Popen(['wget', '--continue', '-O', PATH, URL])#, stdout=devnull, stderr=devnull)
+    # Download file to tmp
+    TMP = os.path.join(os.path.dirname(PATH), ".download." + gen_random())
+    if os.system("wget --read-timeout=300 -O %s %s" % (TMP, URL)) != 0:
+        os.remove(TMP)
+    else:
+        os.rename(TMP, PATH)
 
-    process.wait()
 
 
 def save_image(response, path):
@@ -74,14 +78,14 @@ class Downloader:
         self.DOWNLOAD_LIMIT = limit
 
     def download(self, URL, PATH):
+        PATH += '.' + URL.split('.')[-1]
+
+        p = Process(target=download, args=(URL, PATH))
+        p.start()
+        self.DOWNLOADS += [p]
+
         while len(self.DOWNLOADS) > self.DOWNLOAD_LIMIT:
             self.DOWNLOADS = [x for x in self.DOWNLOADS if x.is_alive()]
-
-        exists = os.path.exists(PATH)
-        p = Process(target=download, args=(URL, PATH + '.' + URL.split('.')[-1]))
-        p.start()
-        if not exists:
-            self.DOWNLOADS += [p]
 
     def download_numbered(self, URLs, PATH, single=True):
         if single and len(URLs) == 1:
