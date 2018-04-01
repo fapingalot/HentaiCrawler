@@ -1,2 +1,6 @@
 # HentaiCrawler
-A tool for downloading from certian hentai sites
+A tool for downloading from hentai sites:
+- Thatpervert.con
+- Simplyhentai.com
+- Shadbase.com
+- XCartX.com
