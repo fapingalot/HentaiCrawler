@@ -5,6 +5,14 @@ A tool for downloading from hentai sites:
 - Shadbase.com
 - XCartX.com
 
+# Install
+Install the linux dependencies
+`` sudo pacman -S wget xclip``
+
+Install the python packages
+`` pip install -r requirements.txt ``
+
+
 # Use
 In the /bin folder:
 - xcartx [<url or url without the hostname>]            - If the url is empty it will use clipboard
